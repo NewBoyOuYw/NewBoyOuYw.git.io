@@ -1,12 +1,12 @@
-baseURL = "https://newboyouyw.github.io/"
-title   = "Hello Friend NG"
-languageCode = "en-us"
+baseURL = "https://example.com"
+title   = "甘肃奥古斯生物科技有限公司"
+languageCode = "zh-CN"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+copyright = "Gansu Auguns Biotetechnklogy Co., Ltd." # This message is only used by the RSS template.
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -28,9 +28,11 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
+
+
 [pagination]
   disableAliases = false
-  pagerSize = 20
+  pagerSize = 4
   path = 'page'
 
 [services]
@@ -50,9 +52,9 @@ disableHugoGeneratorInject = false
   hrefTargetBlank = true
 
 [taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
+  tag      = "标签"
+  category = "分类"
+  series   = "系列"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -68,7 +70,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "Gansu Auguns Biotetechnklogy Co. Ltd."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -87,7 +89,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating system. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -101,7 +103,7 @@ disableHugoGeneratorInject = false
   #
   # Enables the global language menu.
   #
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -118,7 +120,7 @@ disableHugoGeneratorInject = false
   # plausibleScriptSource = 'https://plausible.io/js/script.js'
 
   [params.author]
-    name = "Jane Doe"
+    name = "OuYang"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
@@ -129,11 +131,6 @@ disableHugoGeneratorInject = false
     copyright = true
     author = true
 
-    topText = []
-    bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
-    ]
 
   # Colors for favicons
   #
@@ -142,16 +139,18 @@ disableHugoGeneratorInject = false
     msapplication = "#1b1c1d"
     theme = "#1b1c1d"
 
+
   [params.logo]
     logoMark     = ">"
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
+    fort = "Console"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
     # logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
+    logoCursorAnimate  = "1s"
     # Append the current url pathname to logoText 
     # logoCursorPathname = true
 
@@ -177,7 +176,7 @@ disableHugoGeneratorInject = false
   # Uncomment this to enable Commento.
   #
   # [params.commento]
-  #   url = ""
+  #  url = ""
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Utteranc.es
@@ -223,45 +222,32 @@ disableHugoGeneratorInject = false
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nobody@example.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
-
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    copyright = '<a href="https://github.com/NewBoyOuYw/NewBoyOuYw.github.io" target="_blank" rel="noopener">my github</a>'
   [languages.en.params]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "欢迎"
 
   [languages.fr]
     weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    copyright = '<a href="https://github.com/NewBoyOuYw/NewBoyOuYw.github.io" target="_blank" rel="noopener">my github</a>'
   [languages.fr.params]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "欢迎"
+
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "About"
-    url        = "about/"
+    name       = "首页"
+    url        = "/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "product"
+    name       = "产品"
+    url        = "/product"
+  [[menu.main]]
+    identifier = "news"
+    name       = "新闻"
+    url        = "/news"
